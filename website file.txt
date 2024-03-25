@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Website</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .upload-form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-form input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        .upload-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .upload-form input[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Upload Website</h1>
+</header>
+
+<nav>
+    <a href="#">Upload Photo</a>
+    <a href="#">Upload Video</a>
+</nav>
+
+<section>
+    <div class="upload-form">
+        <h2>Upload Photo</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <input type="file" name="photo" id="photo">
+            <input type="submit" value="Upload Photo">
+        </form>
+    </div>
+
+    <div class="upload-form">
+        <h2>Upload Video</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <input type="file" name="video" id="video">
+            <input type="submit" value="Upload Video">
+        </form>
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 Upload Website. All rights reserved.
+</footer>
+
+</body>
+</html>
